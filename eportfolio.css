@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Braden Dudley | CIS Portfolio</title>
+    <link rel="stylesheet" href="eportfolio.css">
+</head>
+<body>
+
+    <header>
+        <h1>Braden Dudley</h1>
+        <div class="contact-info">
+            <strong>Phone:</strong> (555) 482-9103 | 
+            <strong>Email:</strong> <a href="mailto:bradendudley6@gmail.com">bradendudley6@gmail.com</a>
+            <br>
+            <small>://linkedin.com | ://github.com</small>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Analytical and detail-oriented Computer Information Systems student with a 3.2 GPA and 2+ years of experience in technical support and database design. Proven ability to bridge the gap between complex business needs and technical solutions.</p>
+    </section>
+
+    <section>
+        <h2>Projects by Braden Dudley</h2>
+        <p style="font-style: italic; margin-bottom: 20px;">Below are the key technical projects I’ve developed throughout my CIS program:</p>
+
+        <div style="margin-bottom: 25px;">
+            <span class="date">Jan 2024 – May 2024</span>
+            <span class="project-title">Global Matchmaking & Player Analytics Engine</span>
+            <ul>
+                <li>Architected a <strong>MySQL</strong> database schema to track player stats and matchmaking ELO for a custom-built multiplayer game.</li>
+                <li>Developed a <strong>Python</strong> backend to automate server scaling, ensuring low-latency connections for up to 500 concurrent players.</li>
+                <li>Built a <strong>Tableau</strong> dashboard to visualize player retention and heatmaps for balancing game mechanics.</li>
+            </ul>
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <span class="date">Aug 2024 – Dec 2025</span>
+            <span class="project-title">Procedural Dungeon Asset Manager</span>
+            <ul>
+                <li>Created a <strong>Java-based</strong> tool to manage and categorize thousands of 3D game assets for a procedural generation engine.</li>
+                <li>Implemented a <strong>JSON-based</strong> configuration system, allowing level designers to tweak spawn rates without touching the source code.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Relevant Experience</h2>
+        <div style="margin-bottom: 20px;">
+            <span class="date">Sept 2023 – Present</span>
+            <span class="job-title">IT Help Desk Assistant</span> | <span class="company">University Central IT</span>
+            <ul>
+                <li>Troubleshoot hardware, software, and network connectivity issues for 5,000+ students and faculty.</li>
+                <li>Resolve 40+ support tickets weekly using ServiceNow, maintaining a 95% user satisfaction rating.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <span class="date">Expected May 2027</span>
+        <strong>B.S. in Computer Information Systems</strong><br>
+        WCCS | GPA: 3.2/4.0
+    </section>
+
+</body>
+</html>
