@@ -3,42 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Braden Dudley</title>
+    <!-- REQUIREMENT: A Title (Browser Tab) -->
+    <title>Braden Dudley | CIS Project Gallery</title>
+    
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 40px 20px; background-color: #f0f2f5; color: #333; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        
+        header { border-bottom: 2px solid #eee; margin-bottom: 30px; padding-bottom: 20px; }
+        h1 { margin: 0; color: #1a1a1a; font-size: 2.2rem; }
+        .info-text { margin-top: 10px; color: #666; font-size: 1.1rem; }
+        
+        .description-section { margin-bottom: 40px; }
+        
+        /* REQUIREMENT: A Grid of Assignments */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #0066cc;
+        }
+
+        .project-card h4 { margin: 0 0 10px 0; color: #0066cc; }
+        .project-card p { font-size: 0.95rem; flex-grow: 1; margin-bottom: 20px; }
+
+        .btn-link {
+            text-decoration: none;
+            background: #0066cc;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .btn-link:hover { background: #004a99; }
+    </style>
 </head>
 <body>
 
+<div class="container">
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">about.html</a></li>
-                <li><a href="projects.html">projects.html</a></li>
-                <li><a href="resume.html">resume.html</a></li>
-                <li><a href="contact.html">contact.html</a></li>
-            </ul>
-        </nav>
-
-        <h1>Braden Dudley</h1>
-        <p><em>Aspiring Web Developer & Creative Problem Solver</em></p>
+        <!-- REQUIREMENT: A Title (Visible) -->
+        <h1>CIS Assignment Gallery</h1>
+        
+        <!-- REQUIREMENT: Your Name & Course Name -->
+        <div class="info-text">
+            <strong>Student:</strong> Braden Dudley <br>
+            <strong>Course:</strong> CIS 201 - Systems Analysis and Design
+        </div>
     </header>
 
-    <main>
-        <img src="500306021_1133413222134962_8243235239770304721_n.jpg" alt="Braden Dudley" width="200">
+    <!-- REQUIREMENT: A brief description of the gallery -->
+    <section class="description-section">
+        <h3>About This Portfolio</h3>
+        <p>This gallery showcases the technical projects I have completed during my CIS coursework. The projects focus on building efficient database systems, analyzing network security, and using Python to automate business workflows.</p>
+    </section>
 
-        <section>
-            <h2>Welcome</h2>
-            <p>
-                Hello! I am a passionate professional dedicated to building seamless, impactful digital experiences that bridge the gap between complex code and user-friendly design. With a strong academic and technical background in Computer Information Systems (CIS), I thrive on tackling intricate challenges and continuously evolving my skillset to stay ahead in the ever-changing tech landscape. 
-            </p>
-            <p>
-                My approach combines analytical thinking with a creative spark, allowing me to not only solve problems but to build efficient, scalable solutions. Whether I am diving into a new programming language or optimizing a database, my goal is always the same: to create technology that is as intuitive as it is powerful.
-            </p>
-        </section>
-    </main>
+    <!-- REQUIREMENT: A grid of assignments -->
+    <div class="project-grid">
+        <!-- Card 1 -->
+        <div class="project-card">
+            <h4>Database Normalization</h4>
+            <p>Restructuring a retail database into 3rd Normal Form (3NF) to reduce data redundancy.</p>
+            <a href="database-normalization.html" class="btn-link">View Assignment</a>
+        </div>
 
-    <footer>
-        <p>&copy; 2026 Braden Dudley. All rights reserved.</p>
-    </footer>
+        <!-- Card 2 -->
+        <div class="project-card">
+            <h4>Network Topology Map</h4>
+            <p>A comprehensive visual diagram and hardware list for a small-office enterprise network.</p>
+            <a href="networking.html" class="btn-link">View Assignment</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card">
+            <h4>Python Data Automation</h4>
+            <p>A custom script designed to parse CSV sales data and generate automated weekly reports.</p>
+            <a href="python-script.html" class="btn-link">View Assignment</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="project-card">
+            <h4>ERD Design Project</h4>
+            <p>Entity Relationship Diagram for a complex, multi-tenant hospital management system.</p>
+            <a href="erd-project.html" class="btn-link">View Assignment</a>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
