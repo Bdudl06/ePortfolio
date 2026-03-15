@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Data Automation</title>
+</head>
+<body>
+    <h1>Assignment: Python Data Automation</h1>
+    <p><a href="../index.html">← Back to Gallery</a></p>
+    <hr>
+    <h3>Script Description</h3>
+    <p>This script automates the process of reading a monthly sales CSV and calculating total revenue.</p>
+    
+    <h3>The Python Code</h3>
+    <code style="display:block; background:#f4f4f4; padding:15px;">
+        import csv<br><br>
+        def calculate_sales(file_path):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;total = 0<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;with open(file_path, 'r') as file:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reader = csv.DictReader(file)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for row in reader:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total += float(row['Price'])<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;print(f"Total Sales: ${total}")
+    </code>
+</body>
+</html>
