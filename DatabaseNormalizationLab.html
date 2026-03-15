@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Database Normalization Lab</title>
+</head>
+<body>
+    <h1>Assignment: Database Normalization</h1>
+    <p><a href="../index.html">← Back to Gallery</a></p>
+    <hr>
+    <h3>Objective</h3>
+    <p>Convert a flat-file spreadsheet into 3rd Normal Form (3NF) to ensure data integrity.</p>
+    
+    <h3>SQL Implementation</h3>
+    <pre>
+    -- Creating the Normalized Tables
+    CREATE TABLE Customers (
+        CustomerID INT PRIMARY KEY,
+        FirstName VARCHAR(50),
+        LastName VARCHAR(50),
+        Email VARCHAR(100)
+    );
+
+    CREATE TABLE Orders (
+        OrderID INT PRIMARY KEY,
+        OrderDate DATE,
+        CustomerID INT,
+        FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+    );
+    </pre>
+</body>
+</html>
