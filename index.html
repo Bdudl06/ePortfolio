@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Braden Dudley - CIS Project Gallery</title>
-    
-    <!-- REQUIREMENT: External CSS Styling -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        .container { max-width: 900px; margin: auto; }
+        header { border-bottom: 2px solid #333; margin-bottom: 20px; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        tr:nth-child(even) { background-color: #fafafa; }
+        tr:hover { background-color: #f1f1f1; }
+        .student-info { color: #555; }
+    </style>
 </head>
 <body>
 
@@ -24,7 +32,6 @@
         <p>This gallery serves as a portfolio of technical projects completed by <strong>Braden Dudley</strong>. It highlights my work in database design, network architecture, and automation.</p>
     </section>
 
-    <!-- REQUIREMENT: A clean and organized table layout -->
     <table>
         <thead>
             <tr>
@@ -35,23 +42,22 @@
         </thead>
         <tbody>
             <tr>
-                <td>Database Normalization Lab</td>
+                <td><strong>Database Normalization Lab</strong></td>
                 <td>Restructuring a retail database into 3rd Normal Form (3NF) to reduce redundancy.</td>
-                <!-- REQUIREMENT: Working Hyperlink (Matching your filename) -->
                 <td><a href="DatabaseNormalizationLab.html">View Project</a></td>
             </tr>
             <tr>
-                <td>Network Topology Map</td>
+                <td><strong>Network Topology Map</strong></td>
                 <td>A visual diagram and hardware list for a small-office enterprise network.</td>
                 <td><a href="networking.html">View Project</a></td>
             </tr>
             <tr>
-                <td>Python Data Automation</td>
+                <td><strong>Python Data Automation</strong></td>
                 <td>A script designed to parse CSV sales data and generate a weekly summary report.</td>
                 <td><a href="python-script.html">View Project</a></td>
             </tr>
             <tr>
-                <td>ERD Design Project</td>
+                <td><strong>ERD Design Project</strong></td>
                 <td>Entity Relationship Diagram for a multi-tenant hospital management system.</td>
                 <td><a href="erd-project.html">View Project</a></td>
             </tr>
